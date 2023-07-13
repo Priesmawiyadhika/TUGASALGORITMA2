@@ -1,0 +1,39 @@
+package main;
+
+public class Main {
+
+    public static void main(String[] args) {
+       Karyawan kantor1 = new Karyawan();
+        kantor1.NIP = "K22";
+       kantor1.nama = "Jaehyun";
+       kantor1.J_Kelamin = "Laki - Laki";
+       kantor1.JumlahHari = 29;
+       kantor1.karyawan();
+       kantor1.absenKerja();
+       kantor1.hitunganGaji();
+       System.out.println("");
+       
+       Dosen kantor2 = new Dosen ();
+       kantor2.NIP = "D33";
+       kantor2.nama = "Jennie";
+       kantor2.J_kelamin = "Perempuan";
+       kantor2.JumlahHari = 20;
+       kantor2.Golongan = "1B";
+       kantor2.upah_per_sks = 60000;
+       kantor2.karyawan();
+       kantor2.absenkerja();
+       kantor2.hitungGaji();
+       System.out.println("");
+       
+       Staff kantor3 = new Staff();
+       kantor3. NIP = "S47";
+       kantor3.nama = "Jeno";
+       kantor3.J_Kelamin = "Laki - Laki";
+       kantor3.JumlahHari = 31;
+       kantor3.karyawan();
+       kantor3.absenKerja();
+       kantor3.hitungGaji();
+       
+    }
+    
+}
