@@ -1,0 +1,38 @@
+package main;
+
+class Karyawan {
+
+    String NIP;
+    String nama;
+    String J_Kelamin;
+    int JumlahHari;
+    int totalgaji;
+    
+    void karyawan (){
+        System.out.println("NIP :" + NIP);
+        System.out.println("Nama :" + nama);
+        System.out.println("Jenis Kelamin :" + J_Kelamin);
+    }
+    
+    void absenKerja(){
+        System.out.println("Absen kerja :" + JumlahHari);
+    }
+    
+    void hitungGaji(){
+        System.out.println("Gaji : Rp "+ (JumlahHari*50000));
+    }
+    
+class Dosen extends Karyawan{
+    String Golongan;
+    int Jumlah_sks;
+    int upah_per_sks;
+    
+    @Override
+    void hitungGaji (){
+        System.out.println("Gaji : Rp"+ (upah_per_sks*JumlahHari));
+    }
+}
+
+class staff extends karyawan{
+    
+}
